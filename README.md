@@ -46,29 +46,7 @@ Dựa trên các hình ảnh Anh Hai cung cấp, đây là phần mô tả chi t
 - Sau khi đăng nhập thành công, truy cập vào giao diện quản lý với các tính năng chính:
   
 #### **Chức năng quản trị:**
-1. **Dashboard (Bảng điều khiển):**
-   - Tổng quan về sản phẩm, khách hàng, đơn hàng, coupon giảm giá...
-2. **Products (Quản lý sản phẩm):**
-   - Thêm mới sản phẩm.
-   - Sửa, xoá và gán sản phẩm vào danh mục cụ thể.
-3. **Bundles (Quản lý combo sản phẩm):**
-   - Tạo các gói combo để bán theo set.
-4. **Manufacturers (Nhà sản xuất):**
-   - Quản lý thông tin các nhà sản xuất laptop.
-5. **Categories (Danh mục sản phẩm):**
-   - Tạo và chỉnh sửa danh mục như: Laptop Gaming, Văn phòng...
-6. **Stores (Cửa hàng):**
-   - Thông tin các chi nhánh bán lẻ.
-7. **Customers (Khách hàng):**
-   - Xem danh sách khách hàng đã đăng ký.
-8. **Orders (Đơn hàng):**
-   - Kiểm tra trạng thái đơn hàng, xử lý đơn chờ và hoàn tất đơn hàng.
-9. **Coupons (Mã giảm giá):**
-   - Tạo mã giảm giá cho các chương trình khuyến mãi.
-10. **Users (Quản lý tài khoản admin):**
-    - Quản lý quyền truy cập admin khác.
-11. **Payments (Thanh toán):**
-    - Xem chi tiết thanh toán của từng đơn hàng.
+
 
 ---
 
@@ -96,4 +74,104 @@ Dựa trên các hình ảnh Anh Hai cung cấp, đây là phần mô tả chi t
 
 ---
 
+Dưới đây là bản hướng dẫn ngắn gọn như Anh Hai yêu cầu nè:
+
+---
+
+## 🚀 Hướng Dẫn Khởi Động Website CyberSam
+
+1. **Cài đặt XAMPP**  
+   - Tải và cài XAMPP tại [https://www.apachefriends.org](https://www.apachefriends.org)  
+   - Khởi động **Apache** và **MySQL** trong XAMPP Control Panel.
+
+2. **Upload source code**  
+   - Giải nén và copy folder project vào:  
+     ```
+     C:\xampp\htdocs\
+     ```  
+   - Ví dụ:  
+     ```
+     C:\xampp\htdocs\cybersam
+     ```
+
+3. **Tạo database và import file**  
+   - Truy cập `http://localhost/phpmyadmin`  
+   - Tạo database mới (ví dụ `cybersam_db`)  
+   - Import file `database.sql` vào database này.
+
+4. **Truy cập website**  
+   - Trang chính: `http://localhost/cybersam/`  
+   - Trang admin: `http://localhost/cybersam/admin_area/`
+
+---
+Dưới đây là bản mô tả các lỗ hổng (vulnerabilities) cho project **CyberSam eCommerce Vulnerable Web** của Anh Hai. Anh chỉ cần dán thêm hình ảnh minh họa vào từng phần là xong.
+
+---
+
+## 🔥 Các lỗ hổng bảo mật mô phỏng trong hệ thống
+
+### 1. Recon Directory
+- **Mô tả**: Một số thư mục nhạy cảm (ví dụ: `/admin_area/`, `/backup/`, `/uploads/`) không được bảo vệ, có thể phát hiện qua các công cụ scan thư mục như Gobuster, Dirb, hoặc tự tìm kiếm thủ công.
+- **Rủi ro**: Hacker có thể tìm thấy các trang quản trị hoặc file backup chứa thông tin nhạy cảm.
+- **Ảnh minh họa**:  
+  _(Dán ảnh kết quả scan thư mục tại đây)_
+
+---
+
+### 2. Brute Force Login
+- **Mô tả**: Trang đăng nhập admin không giới hạn số lần thử sai, không có CAPTCHA hay cơ chế khóa tài khoản sau nhiều lần thất bại.
+- **Rủi ro**: Dễ bị tấn công brute force để dò tìm mật khẩu admin.
+- **Ảnh minh họa**:  
+  _(Dán ảnh sử dụng Hydra, Burp Suite Intruder brute force vào login form tại đây)_
+
+---
+
+### 3. File Upload Vulnerability
+- **Mô tả**: Chức năng upload ảnh không kiểm tra đúng loại file, cho phép upload file thực thi (như `.php`) lên server.
+- **Rủi ro**: Hacker có thể upload webshell để điều khiển máy chủ từ xa.
+- **Ảnh minh họa**:  
+  _(Dán ảnh upload shell thành công + truy cập shell tại đây)_
+
+---
+
+### 4. IDOR (Insecure Direct Object References)
+- **Mô tả**: Người dùng có thể thay đổi tham số trên URL để truy cập hoặc sửa thông tin không thuộc quyền quản lý (ví dụ: `user_id=2`).
+- **Rủi ro**: Tiết lộ thông tin khách hàng khác hoặc chỉnh sửa dữ liệu đơn hàng trái phép.
+- **Ảnh minh họa**:  
+  _(Dán ảnh thao tác IDOR, chỉnh sửa đơn hàng khác hoặc xem thông tin khách tại đây)_
+
+---
+
+### 5. Stored XSS / DOM XSS
+- **Mô tả**: Ứng dụng không lọc dữ liệu nhập từ người dùng, cho phép chèn mã JavaScript độc hại. Kịch bản XSS được lưu lại và thực thi trên trình duyệt các nạn nhân khác.
+- **Rủi ro**: Tấn công đánh cắp cookie, chiếm quyền session hoặc phát tán mã độc.
+- **Ảnh minh họa**:  
+  _(Dán ảnh payload XSS và kết quả thực thi script trên giao diện tại đây)_
+
+
+---
+
+## 📞 Contact
+Nếu bạn muốn khởi động và trải nghiệm website này, tôi sẽ cung cấp:
+- 📂 **File database đầy đủ**
+- 📄 **Tài liệu mô tả chi tiết các lỗ hổng bảo mật**
+
+👉 Vui lòng liên hệ trực tiếp qua:  
+- **Telegram**: [@yourtelegram](https://t.me/yourtelegram)  
+- **Gmail**: yourmail@gmail.com  
+
+---
+
+### 🛒 Mẫu Form Mua Hàng (để dễ ghi thông tin nè)
+```
+Tên người nhận:  
+Số điện thoại:  
+Email liên hệ:  
+Yêu cầu nhận file: [ Database / Tài liệu lỗ hổng / Cả hai ]  
+Ghi chú thêm (nếu có):  
+```
+
+---
+
+Anh Hai chỉ cần thay `yourtelegram` và `yourmail@gmail.com` thành thông tin riêng là chuẩn luôn! Nếu muốn em làm file README.md luôn, hú em nha!
 
