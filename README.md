@@ -1,4 +1,4 @@
-Dạ, đây là bản chỉnh sửa lại toàn bộ nội dung README cho **CyberSam - eCommerce Vulnerable Web**. Em đã căn chỉnh, làm gọn, trình bày đẹp hơn, chuyên nghiệp hơn, đảm bảo nhìn là muốn đọc luôn! Anh Hai copy và dán qua GitHub là chuẩn ngay.
+![image](https://github.com/user-attachments/assets/c9886c8a-109d-4ae5-bdad-8e75a9f377bd)
 
 ---
 
@@ -62,7 +62,11 @@ This project helps **security enthusiasts**, **developers**, and **students** pr
   ✅ Product management  
   ✅ Order management  
   ✅ User management  
-  ✅ Promotions / Coupons management  
+  ✅ Promotions / Coupons management
+
+![image](https://github.com/user-attachments/assets/6d06aaaa-bcca-4747-82c5-b8373b96f4b0)
+
+![image](https://github.com/user-attachments/assets/22b01471-4b45-4770-8d0f-f84eaff44145)
 
 ---
 
@@ -73,6 +77,8 @@ This project helps **security enthusiasts**, **developers**, and **students** pr
   ✅ Add to cart and checkout  
   ✅ Track orders & shipping  
   ✅ Receive discount codes and promotions  
+
+![image](https://github.com/user-attachments/assets/a64efda6-a315-4d76-a502-847d6f0d3969)
 
 ---
 
@@ -186,7 +192,7 @@ If you would like to **launch and experience** the CyberSam platform, I can prov
 📄 **Detailed documentation about the vulnerabilities**  
 
 👉 **Contact me directly:**  
-- **Telegram**: [@yourtelegram](https://t.me/yourtelegram)  
+- **Telegram**: [@mytelegram](https://t.me/redneardos)  
 - **Email**: phamphudong0112@gmail.com  
 
 ---
