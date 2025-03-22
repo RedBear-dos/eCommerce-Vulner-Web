@@ -1,3 +1,12 @@
+
+---
+
+## 🚨⚠️ Important Disclaimer ⚠️🚨
+
+🚧 **This project is a deliberately vulnerable eCommerce website, self-developed by an individual, and has NO connection with any other organizations or individuals.**  
+🚧 **Created for educational purposes ONLY**, targeting students in **Cybersecurity, Pentesting, Ethical Hacking**, etc.  
+🚧 **To unlock full access**, please scroll to the end of this page for instructions.
+
 ---
 
 # 🔒 CyberSam - eCommerce Vulnerable Web
@@ -120,6 +129,18 @@ CyberSam intentionally includes **multiple web vulnerabilities** to help learner
 ![image](https://github.com/user-attachments/assets/55262042-4e81-43d6-922e-f5c382070a19)
 
 ![image](https://github.com/user-attachments/assets/651c6b46-8e2e-498f-b827-93b5313e887c)
+
+---
+
+## 💉🗄️  SQL Injection
+
+![image](https://github.com/user-attachments/assets/6339b559-43ea-477f-903d-cecc5030f48b)
+
+---
+
+## Other Vulnerabilities
+
+![image](https://github.com/user-attachments/assets/6339b559-43ea-477f-903d-cecc5030f48b)
 
 ---
 
