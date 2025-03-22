@@ -91,6 +91,48 @@ CyberSam includes **multiple web vulnerabilities** for learners to understand, e
 
 ---
 
+## 🔍 Recon - Directory Enumeration
+- **Description**: Sensitive directories such as `/admin_area/`, `/backup/`, and `/uploads/` are publicly accessible.
+- **Risk**: Attackers can discover and exploit these directories using tools like **Gobuster**, **Dirb**, or manual browsing.
+
+![image](https://github.com/user-attachments/assets/510ec3e5-c4c0-41e7-8bf6-cd1d42da588b)
+
+![image](https://github.com/user-attachments/assets/bd6a2b26-dce9-4d1a-838a-3c8efa442926)
+
+## 🔑 Brute Force Login
+- **Description**: The admin login page lacks brute force protections like CAPTCHA or account lockout mechanisms.
+- **Risk**: Enables attackers to perform credential stuffing or brute-force attacks using tools like **Hydra** or **Burp Suite Intruder**.
+
+  ![image](https://github.com/user-attachments/assets/96676bbd-8049-4586-bf00-fd9b917e09da)
+
+## 🗂️ File Upload Vulnerability
+- **Description**: The file upload functionality does not validate file types properly. Attackers can upload malicious files such as `.php` shells.
+- **Risk**: Remote Code Execution (RCE), allowing attackers full server control.
+
+![image](https://github.com/user-attachments/assets/a3ac57b2-cc8a-4b4d-be7d-55a0bf8abce0)
+
+## 🆔 IDOR - Insecure Direct Object References
+- **Description**: Users can manipulate URL parameters (e.g., `user_id=2`) to access or modify resources belonging to other users.
+- **Risk**: Unauthorized access to sensitive user data and orders.
+
+  ![image](https://github.com/user-attachments/assets/9ee6fd1f-619d-4a01-a53f-f7d289b65788)
+
+## 🐞 Stored XSS / DOM XSS
+- **Description**: The application does not sanitize user input properly, allowing persistent or DOM-based Cross-Site Scripting attacks.
+- **Risk**: Stealing session cookies, hijacking accounts, or injecting malware.
+
+![image](https://github.com/user-attachments/assets/55262042-4e81-43d6-922e-f5c382070a19)
+
+![image](https://github.com/user-attachments/assets/651c6b46-8e2e-498f-b827-93b5313e887c)
+
+## 💉🗄️  SQL Injection
+
+![image](https://github.com/user-attachments/assets/6339b559-43ea-477f-903d-cecc5030f48b)
+
+## 📦⚠️ Other Vulnerabilities
+
+---
+
 ## 🛠️ Quick Start Guide
 
 ### 1️⃣ Install XAMPP  
