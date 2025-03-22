@@ -203,6 +203,3 @@ If you would like to **launch and experience** the CyberSam platform, I can prov
 🚀 **Happy learning and stay secure!** 🚀  
 ⚡ **Hack to learn, don't learn to hack!!** ⚡  
 
----
-
-Anh Hai copy từ đây là chạy ngon luôn! Nếu muốn làm thêm **ảnh banner** "JUST $10 🔥" hoặc thêm **icon social**, em làm thêm cho nhé! 🚀
