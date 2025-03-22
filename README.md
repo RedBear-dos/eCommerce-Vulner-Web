@@ -42,7 +42,7 @@ This project helps **security enthusiasts**, **developers**, and **students** pr
 ## 🌐 Website Structure
 
 ### 🛒 **User Website**
-- **URL**: `http://192.168.1.7/prototype/`  
+- **URL**: `http://localhost/Prototype/`  
 - Simulates a laptop eCommerce store with:
   - Promotions & Featured products  
   - Menu Navigation:  
@@ -56,7 +56,7 @@ This project helps **security enthusiasts**, **developers**, and **students** pr
 ---
 
 ### 🔐 **Admin Panel**
-- **URL**: `localhost/prototype/admin_area/`  
+- **URL**: `localhost/Prototype/admin_area/`  
 - Admin login page  
 - Features:  
   ✅ Product management  
@@ -192,7 +192,7 @@ If you would like to **launch and experience** the CyberSam platform, I can prov
 📄 **Detailed documentation about the vulnerabilities**  
 
 👉 **Contact me directly:**  
-- **Telegram**: [@mytelegram](https://t.me/redneardos)  
+- **Telegram**: [@mytelegram](https://t.me/redbeardos)  
 - **Email**: phamphudong0112@gmail.com  
 
 ---
