@@ -1,187 +1,168 @@
+---
 
-
-🔒 **eCommerce Vulnerable Web**  
-A deliberately insecure eCommerce web application designed for learning and practicing web application penetration testing. This project helps security enthusiasts, developers, and students understand common web vulnerabilities in online shopping platforms.
-
-**Features:**
-- Simulates a basic eCommerce platform (users, products, orders, etc.)
-- Contains vulnerabilities like SQL Injection, Cross-Site Scripting (XSS), Insecure Direct Object References (IDOR), Broken Authentication, and more.
-- Ideal for Capture The Flag (CTF) challenges and security workshops.
-
-**⚠️ For educational purposes only!**  
-Use responsibly in a controlled environment.
+# 🔒 CyberSam - eCommerce Vulnerable Web
+A **deliberately insecure eCommerce web application** built for educational purposes. This project is designed to help **security enthusiasts**, **developers**, and **students** practice and understand **common web vulnerabilities** in an online shopping platform environment.
 
 ---
 
-## 🛒 CyberSam - eCommerce Vulnerable Web  
-**CyberSam** là một website thương mại điện tử mô phỏng, xây dựng nhằm phục vụ mục đích học tập và thực hành kiểm thử bảo mật web (Web Pentest). Hệ thống bao gồm giao diện người dùng, trang quản trị admin và các chức năng cơ bản của một website bán hàng trực tuyến.
+## 🚀 Key Features
+- Basic eCommerce platform simulation (users, products, orders, etc.)
+- Intentionally includes vulnerabilities such as:
+  - SQL Injection (SQLi)
+  - Cross-Site Scripting (XSS)
+  - Insecure Direct Object References (IDOR)
+  - Broken Authentication
+  - Cross-Site Request Forgery (CSRF)
+  - Unrestricted File Upload, and more!
+  - And others vulnerbilities ...
+- Perfect for Capture The Flag (CTF) challenges, penetration testing practice, and security workshops.
+
+⚠️ **For educational and testing purposes only!**  
+Always use in a **controlled environment**.
 
 ---
 
-### **🌐 Trang chính (User Website)**
-- Địa chỉ: `http://192.168.1.7/prototype/`
-- Giao diện mô phỏng một cửa hàng bán laptop trực tuyến.
-- Hiển thị các chương trình khuyến mãi, quảng cáo sản phẩm nổi bật.
-- Các menu điều hướng gồm:
-  - `News`: Tin tức sản phẩm.
-  - `About Us`: Giới thiệu về cửa hàng.
-  - `Shop`: Danh sách sản phẩm.
-  - `Local Stores`: Hệ thống cửa hàng.
-  - `My Account`: Đăng ký / Đăng nhập tài khoản.
-- Chức năng:
-  - Xem thông tin chi tiết sản phẩm.
-  - Thêm sản phẩm vào giỏ hàng.
-  - Đăng ký / Đăng nhập tài khoản người dùng.
-  - Đặt hàng (Checkout).
+# 🌐 Website Structure
 
-(image) 
-
----
-
-### **🔐 Trang Admin (Admin Panel)**
-- Địa chỉ: `http://192.168.1.7/prototype/admin_area/`
-- Trang đăng nhập dành riêng cho quản trị viên (`Admin Login`).
-- Sau khi đăng nhập thành công, truy cập vào giao diện quản lý với các tính năng chính:
-  
-#### **Chức năng quản trị:**
-
-(image) 
+### 🛒 **User Website**
+- URL: `http://192.168.1.7/prototype/`
+- Simulates a laptop eCommerce store with:
+  - Promotions & Featured products
+  - Menu Navigation:
+    - `News`
+    - `About Us`
+    - `Shop`
+    - `Local Stores`
+    - `My Account` (Sign Up / Login)
+- Features:
+  - Product browsing and details
+  - Add items to cart
+  - User registration / login
+  - Checkout and order processing
+  - Others function ... 
 
 ---
 
-### **👤 Trang User (Người dùng)**
-- Đăng ký và đăng nhập tài khoản khách hàng.
-- Chức năng:
-  - Xem danh sách và chi tiết sản phẩm.
-  - Thêm sản phẩm vào giỏ hàng.
-  - Thực hiện thanh toán đơn hàng.
-  - Theo dõi đơn hàng và trạng thái vận chuyển.
-  - Nhận mã giảm giá và khuyến mãi.
-  
----
+### 🔐 **Admin Panel**
+- URL: `localhost/prototype/admin_area/`
+- Admin login page
+![image](https://github.com/user-attachments/assets/811cba21-4f4c-4be8-890c-b030f49a5688)
 
-### **🚩 Lưu ý**
-Đây là môi trường mô phỏng **cố tình chứa lỗ hổng bảo mật** để phục vụ việc học tập và nghiên cứu về an toàn thông tin như:
-- SQL Injection
-- XSS (Cross Site Scripting)
-- IDOR (Insecure Direct Object References)
-- Broken Authentication
-- CSRF (Cross-Site Request Forgery)
-- Và nhiều lỗ hổng khác...
+- After successful login, the admin dashboard provides:
+  - Product management
+  - Order management
+  - User management
+  - Promotions / Coupons management
 
-⚠️ **Chỉ sử dụng trong môi trường kiểm thử nội bộ!**
-
-(image) 
+![image](https://github.com/user-attachments/assets/673cddf3-9cb2-4b8a-b040-28afa9723d41) 
 
 ---
 
-Dưới đây là bản hướng dẫn ngắn gọn như Anh Hai yêu cầu nè:
+### 👤 **User Account**
+- User sign-up and login functionality
+- Features:
+  - View product listings and details
+  - Add products to cart and checkout
+  - Track orders and shipping status
+  - Receive discount codes and promotions
 
 ---
 
-## 🚀 Hướng Dẫn Khởi Động Website CyberSam
+# ⚠️ Vulnerabilities Overview
 
-1. **Cài đặt XAMPP**  
-   - Tải và cài XAMPP tại [https://www.apachefriends.org](https://www.apachefriends.org)  
-   - Khởi động **Apache** và **MySQL** trong XAMPP Control Panel.
-
-2. **Upload source code**  
-   - Giải nén và copy folder project vào:  
-     ```
-     C:\xampp\htdocs\
-     ```  
-   - Ví dụ:  
-     ```
-     C:\xampp\htdocs\cybersam
-     ```
-
-3. **Tạo database và import file**  
-   - Truy cập `http://localhost/phpmyadmin`  
-   - Tạo database mới (ví dụ `cybersam_db`)  
-   - Import file `database.sql` vào database này.
-
-4. **Truy cập website**  
-   - Trang chính: `http://localhost/cybersam/`  
-   - Trang admin: `http://localhost/cybersam/admin_area/`
-
-(image) 
-
----
-Dưới đây là bản mô tả các lỗ hổng (vulnerabilities) cho project **CyberSam eCommerce Vulnerable Web** của Anh Hai. Anh chỉ cần dán thêm hình ảnh minh họa vào từng phần là xong.
+CyberSam intentionally includes **multiple web vulnerabilities** to help learners understand, exploit, and patch them in a controlled scenario.
 
 ---
 
-## 🔥 Các lỗ hổng bảo mật mô phỏng trong hệ thống
-
-### 1. Recon Directory
-- **Mô tả**: Một số thư mục nhạy cảm (ví dụ: `/admin_area/`, `/backup/`, `/uploads/`) không được bảo vệ, có thể phát hiện qua các công cụ scan thư mục như Gobuster, Dirb, hoặc tự tìm kiếm thủ công.
-- **Rủi ro**: Hacker có thể tìm thấy các trang quản trị hoặc file backup chứa thông tin nhạy cảm.
-- **Ảnh minh họa**:  
-  _(Dán ảnh kết quả scan thư mục tại đây)_
+## 🔍 Recon - Directory Enumeration
+- **Description**: Sensitive directories such as `/admin_area/`, `/backup/`, and `/uploads/` are publicly accessible.
+- **Risk**: Attackers can discover and exploit these directories using tools like **Gobuster**, **Dirb**, or manual browsing.
+- _(Add directory scan screenshots here)_
 
 ---
 
-### 2. Brute Force Login
-- **Mô tả**: Trang đăng nhập admin không giới hạn số lần thử sai, không có CAPTCHA hay cơ chế khóa tài khoản sau nhiều lần thất bại.
-- **Rủi ro**: Dễ bị tấn công brute force để dò tìm mật khẩu admin.
-- **Ảnh minh họa**:  
-  _(Dán ảnh sử dụng Hydra, Burp Suite Intruder brute force vào login form tại đây)_
+## 🔑 Brute Force Login
+- **Description**: The admin login page lacks brute force protections like CAPTCHA or account lockout mechanisms.
+- **Risk**: Enables attackers to perform credential stuffing or brute-force attacks using tools like **Hydra** or **Burp Suite Intruder**.
+- _(Add brute force attack screenshots here)_
 
 ---
 
-### 3. File Upload Vulnerability
-- **Mô tả**: Chức năng upload ảnh không kiểm tra đúng loại file, cho phép upload file thực thi (như `.php`) lên server.
-- **Rủi ro**: Hacker có thể upload webshell để điều khiển máy chủ từ xa.
-- **Ảnh minh họa**:  
-  _(Dán ảnh upload shell thành công + truy cập shell tại đây)_
+## 🗂️ File Upload Vulnerability
+- **Description**: The file upload functionality does not validate file types properly. Attackers can upload malicious files such as `.php` shells.
+- **Risk**: Remote Code Execution (RCE), allowing attackers full server control.
+- _(Add shell upload and webshell access screenshots here)_
 
 ---
 
-### 4. IDOR (Insecure Direct Object References)
-- **Mô tả**: Người dùng có thể thay đổi tham số trên URL để truy cập hoặc sửa thông tin không thuộc quyền quản lý (ví dụ: `user_id=2`).
-- **Rủi ro**: Tiết lộ thông tin khách hàng khác hoặc chỉnh sửa dữ liệu đơn hàng trái phép.
-- **Ảnh minh họa**:  
-  _(Dán ảnh thao tác IDOR, chỉnh sửa đơn hàng khác hoặc xem thông tin khách tại đây)_
+## 🆔 IDOR - Insecure Direct Object References
+- **Description**: Users can manipulate URL parameters (e.g., `user_id=2`) to access or modify resources belonging to other users.
+- **Risk**: Unauthorized access to sensitive user data and orders.
+- _(Add IDOR exploitation screenshots here)_
 
 ---
 
-### 5. Stored XSS / DOM XSS
-- **Mô tả**: Ứng dụng không lọc dữ liệu nhập từ người dùng, cho phép chèn mã JavaScript độc hại. Kịch bản XSS được lưu lại và thực thi trên trình duyệt các nạn nhân khác.
-- **Rủi ro**: Tấn công đánh cắp cookie, chiếm quyền session hoặc phát tán mã độc.
-- **Ảnh minh họa**:  
-  _(Dán ảnh payload XSS và kết quả thực thi script trên giao diện tại đây)_
-
+## 🐞 Stored XSS / DOM XSS
+- **Description**: The application does not sanitize user input properly, allowing persistent or DOM-based Cross-Site Scripting attacks.
+- **Risk**: Stealing session cookies, hijacking accounts, or injecting malware.
+- _(Add XSS payload and execution screenshots here)_
 
 ---
 
-Dưới đây là phiên bản hoàn chỉnh, em thêm luôn dòng chúc nha Anh Hai:
+# 🛠️ Quick Start Guide
+
+## 1. Install XAMPP
+- Download and install XAMPP:  
+  [https://www.apachefriends.org](https://www.apachefriends.org)
+- Start **Apache** and **MySQL** from the XAMPP control panel.
+
+## 2. Upload Source Code
+- Extract the project folder and move it to:  
+  ```
+  C:\xampp\htdocs\
+  ```
+  Example:  
+  ```
+  C:\xampp\htdocs\cybersam
+  ```
+
+## 3. Import Database
+- Go to `http://localhost/phpmyadmin`
+- Create a new database, e.g., `cybersam_db`
+- Import the `database.sql` file provided.
+
+## 4. Access the Website
+- User site: `http://localhost/cybersam/`
+- Admin panel: `http://localhost/cybersam/admin_area/`
 
 ---
 
-## 📞 Contact
-Nếu bạn muốn khởi động và trải nghiệm website này, tôi sẽ cung cấp:
-- 📂 **File database đầy đủ**
-- 📄 **Tài liệu mô tả chi tiết các lỗ hổng bảo mật**
+# 📞 Contact
+If you would like to **launch and experience** the CyberSam platform, I can provide:
+- 📂 **The full database**
+- 📄 **Detailed documentation about the vulnerabilities**
 
-👉 Vui lòng liên hệ trực tiếp qua:  
+👉 Please contact me directly:  
 - **Telegram**: [@yourtelegram](https://t.me/yourtelegram)  
-- **Gmail**: yourmail@gmail.com  
+- **Email**: yourmail@gmail.com  
 
 ---
 
-### 🛒 Mẫu Form Đăng Ký Nhận File
+### 📝 Request Form (Optional)
 ```
-Tên người nhận:  
-Số điện thoại:  
-Email liên hệ:  
-Yêu cầu nhận file: [ Database / Tài liệu lỗ hổng / Cả hai ]  
-Ghi chú thêm (nếu có):  
+Full Name:  
+Phone Number:  
+Email:  
+Request: [Database] / [Vulnerability Documentation] / [Both]  
+Notes (if any):  
 ```
 
 ---
 
-### 🌿 Chúc các bạn có một ngày học tập và làm việc thật hiệu quả và tốt lành!
+# 🌿 Final Note
+✨ **Wishing you a productive and successful day ahead!**  
+Happy learning and stay secure!
 
 ---
 
-
+Anh Hai check thử nha! Nếu muốn anh em mình làm thêm bản markdown file `README.md` hoặc thêm chi tiết CTF lab thì em làm liền luôn! 🚀
