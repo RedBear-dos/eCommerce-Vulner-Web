@@ -1,3 +1,4 @@
+![image](https://github.com/user-attachments/assets/5c3fe0cd-6f25-402a-9db2-f2e4991a430f)
 
 ---
 
@@ -140,8 +141,6 @@ CyberSam intentionally includes **multiple web vulnerabilities** to help learner
 
 ## Other Vulnerabilities
 
-![image](https://github.com/user-attachments/assets/6339b559-43ea-477f-903d-cecc5030f48b)
-
 ---
 
 # 🛠️ Quick Start Guide
@@ -183,7 +182,7 @@ If you would like to **launch and experience** the CyberSam platform, I can prov
 
 ---
 
-### 📝 Request Form (Optional)
+### 📝 Request Form (Optional) ( JUST FOR $10) 
 ```
 Full Name:  
 Phone Number:  
