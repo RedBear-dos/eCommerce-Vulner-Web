@@ -95,16 +95,11 @@ CyberSam intentionally includes **multiple web vulnerabilities** to help learner
 
 ![image](https://github.com/user-attachments/assets/bd6a2b26-dce9-4d1a-838a-3c8efa442926)
 
-
----
-
 ## 🔑 Brute Force Login
 - **Description**: The admin login page lacks brute force protections like CAPTCHA or account lockout mechanisms.
 - **Risk**: Enables attackers to perform credential stuffing or brute-force attacks using tools like **Hydra** or **Burp Suite Intruder**.
 
   ![image](https://github.com/user-attachments/assets/96676bbd-8049-4586-bf00-fd9b917e09da)
-
----
 
 ## 🗂️ File Upload Vulnerability
 - **Description**: The file upload functionality does not validate file types properly. Attackers can upload malicious files such as `.php` shells.
@@ -112,16 +107,11 @@ CyberSam intentionally includes **multiple web vulnerabilities** to help learner
 
 ![image](https://github.com/user-attachments/assets/a3ac57b2-cc8a-4b4d-be7d-55a0bf8abce0)
 
----
-
 ## 🆔 IDOR - Insecure Direct Object References
 - **Description**: Users can manipulate URL parameters (e.g., `user_id=2`) to access or modify resources belonging to other users.
 - **Risk**: Unauthorized access to sensitive user data and orders.
 
   ![image](https://github.com/user-attachments/assets/9ee6fd1f-619d-4a01-a53f-f7d289b65788)
-
-
----
 
 ## 🐞 Stored XSS / DOM XSS
 - **Description**: The application does not sanitize user input properly, allowing persistent or DOM-based Cross-Site Scripting attacks.
@@ -131,15 +121,11 @@ CyberSam intentionally includes **multiple web vulnerabilities** to help learner
 
 ![image](https://github.com/user-attachments/assets/651c6b46-8e2e-498f-b827-93b5313e887c)
 
----
-
 ## 💉🗄️  SQL Injection
 
 ![image](https://github.com/user-attachments/assets/6339b559-43ea-477f-903d-cecc5030f48b)
 
----
-
-## Other Vulnerabilities
+## 📦⚠️ Other Vulnerabilities
 
 ---
 
@@ -180,9 +166,9 @@ If you would like to **launch and experience** the CyberSam platform, I can prov
 - **Telegram**: [@yourtelegram](https://t.me/yourtelegram)  
 - **Email**: phamphudong0112@gmail.com  
 
----
+### 📝 **Request Form** (Optional)  
+#### 🚀 **🔥 JUST $10 for FULL ACCESS 🔥**
 
-### 📝 Request Form (Optional) ( JUST FOR $10) 
 ```
 Full Name:  
 Phone Number:  
@@ -191,13 +177,10 @@ Request: [Database] / [Vulnerability Documentation] / [Both]
 Notes (if any):  
 ```
 
----
-
 # 🌿 Final Note
 ✨ **Wishing you a productive and successful day ahead!**  
 Happy learning and stay secure!
 
----
 
 🚀✨ **Hack to learn, don't learn to hack!!** ✨🚀
 
