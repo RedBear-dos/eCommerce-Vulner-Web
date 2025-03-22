@@ -46,6 +46,7 @@ Always use in a **controlled environment**.
 ### 🔐 **Admin Panel**
 - URL: `localhost/prototype/admin_area/`
 - Admin login page
+
 ![image](https://github.com/user-attachments/assets/811cba21-4f4c-4be8-890c-b030f49a5688)
 
 - After successful login, the admin dashboard provides:
@@ -66,6 +67,8 @@ Always use in a **controlled environment**.
   - Track orders and shipping status
   - Receive discount codes and promotions
 
+![image](https://github.com/user-attachments/assets/08f4b8c7-0dba-4302-af34-1162bb7c23b1)
+
 ---
 
 # ⚠️ Vulnerabilities Overview
@@ -77,35 +80,46 @@ CyberSam intentionally includes **multiple web vulnerabilities** to help learner
 ## 🔍 Recon - Directory Enumeration
 - **Description**: Sensitive directories such as `/admin_area/`, `/backup/`, and `/uploads/` are publicly accessible.
 - **Risk**: Attackers can discover and exploit these directories using tools like **Gobuster**, **Dirb**, or manual browsing.
-- _(Add directory scan screenshots here)_
+
+![image](https://github.com/user-attachments/assets/510ec3e5-c4c0-41e7-8bf6-cd1d42da588b)
+
+![image](https://github.com/user-attachments/assets/bd6a2b26-dce9-4d1a-838a-3c8efa442926)
+
 
 ---
 
 ## 🔑 Brute Force Login
 - **Description**: The admin login page lacks brute force protections like CAPTCHA or account lockout mechanisms.
 - **Risk**: Enables attackers to perform credential stuffing or brute-force attacks using tools like **Hydra** or **Burp Suite Intruder**.
-- _(Add brute force attack screenshots here)_
+
+  ![image](https://github.com/user-attachments/assets/96676bbd-8049-4586-bf00-fd9b917e09da)
 
 ---
 
 ## 🗂️ File Upload Vulnerability
 - **Description**: The file upload functionality does not validate file types properly. Attackers can upload malicious files such as `.php` shells.
 - **Risk**: Remote Code Execution (RCE), allowing attackers full server control.
-- _(Add shell upload and webshell access screenshots here)_
+
+![image](https://github.com/user-attachments/assets/a3ac57b2-cc8a-4b4d-be7d-55a0bf8abce0)
 
 ---
 
 ## 🆔 IDOR - Insecure Direct Object References
 - **Description**: Users can manipulate URL parameters (e.g., `user_id=2`) to access or modify resources belonging to other users.
 - **Risk**: Unauthorized access to sensitive user data and orders.
-- _(Add IDOR exploitation screenshots here)_
+
+  ![image](https://github.com/user-attachments/assets/9ee6fd1f-619d-4a01-a53f-f7d289b65788)
+
 
 ---
 
 ## 🐞 Stored XSS / DOM XSS
 - **Description**: The application does not sanitize user input properly, allowing persistent or DOM-based Cross-Site Scripting attacks.
 - **Risk**: Stealing session cookies, hijacking accounts, or injecting malware.
-- _(Add XSS payload and execution screenshots here)_
+
+![image](https://github.com/user-attachments/assets/55262042-4e81-43d6-922e-f5c382070a19)
+
+![image](https://github.com/user-attachments/assets/651c6b46-8e2e-498f-b827-93b5313e887c)
 
 ---
 
@@ -128,12 +142,12 @@ CyberSam intentionally includes **multiple web vulnerabilities** to help learner
 
 ## 3. Import Database
 - Go to `http://localhost/phpmyadmin`
-- Create a new database, e.g., `cybersam_db`
 - Import the `database.sql` file provided.
+- It will Automatically Create DB 
 
 ## 4. Access the Website
-- User site: `http://localhost/cybersam/`
-- Admin panel: `http://localhost/cybersam/admin_area/`
+- User site: `http://localhost/Prototype/`
+- Admin panel: `http://localhost/Prototype/admin_area/`
 
 ---
 
@@ -144,7 +158,7 @@ If you would like to **launch and experience** the CyberSam platform, I can prov
 
 👉 Please contact me directly:  
 - **Telegram**: [@yourtelegram](https://t.me/yourtelegram)  
-- **Email**: yourmail@gmail.com  
+- **Email**: phamphudong0112@gmail.com  
 
 ---
 
@@ -165,4 +179,5 @@ Happy learning and stay secure!
 
 ---
 
-Anh Hai check thử nha! Nếu muốn anh em mình làm thêm bản markdown file `README.md` hoặc thêm chi tiết CTF lab thì em làm liền luôn! 🚀
+🚀✨ **Hack to learn, don't learn to hack!!** ✨🚀
+
