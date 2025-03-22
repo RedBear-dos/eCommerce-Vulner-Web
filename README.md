@@ -13,10 +13,6 @@ Use responsibly in a controlled environment.
 
 ---
 
-Dựa trên các hình ảnh Anh Hai cung cấp, đây là phần mô tả chi tiết về website và các chức năng từng trang. Anh Hai có thể dùng để ghi README hoặc mô tả cho dự án nhé!
-
----
-
 ## 🛒 CyberSam - eCommerce Vulnerable Web  
 **CyberSam** là một website thương mại điện tử mô phỏng, xây dựng nhằm phục vụ mục đích học tập và thực hành kiểm thử bảo mật web (Web Pentest). Hệ thống bao gồm giao diện người dùng, trang quản trị admin và các chức năng cơ bản của một website bán hàng trực tuyến.
 
@@ -38,6 +34,8 @@ Dựa trên các hình ảnh Anh Hai cung cấp, đây là phần mô tả chi t
   - Đăng ký / Đăng nhập tài khoản người dùng.
   - Đặt hàng (Checkout).
 
+(image) 
+
 ---
 
 ### **🔐 Trang Admin (Admin Panel)**
@@ -47,6 +45,7 @@ Dựa trên các hình ảnh Anh Hai cung cấp, đây là phần mô tả chi t
   
 #### **Chức năng quản trị:**
 
+(image) 
 
 ---
 
@@ -71,6 +70,8 @@ Dựa trên các hình ảnh Anh Hai cung cấp, đây là phần mô tả chi t
 - Và nhiều lỗ hổng khác...
 
 ⚠️ **Chỉ sử dụng trong môi trường kiểm thử nội bộ!**
+
+(image) 
 
 ---
 
@@ -102,6 +103,8 @@ Dưới đây là bản hướng dẫn ngắn gọn như Anh Hai yêu cầu nè:
 4. **Truy cập website**  
    - Trang chính: `http://localhost/cybersam/`  
    - Trang admin: `http://localhost/cybersam/admin_area/`
+
+(image) 
 
 ---
 Dưới đây là bản mô tả các lỗ hổng (vulnerabilities) cho project **CyberSam eCommerce Vulnerable Web** của Anh Hai. Anh chỉ cần dán thêm hình ảnh minh họa vào từng phần là xong.
@@ -151,6 +154,10 @@ Dưới đây là bản mô tả các lỗ hổng (vulnerabilities) cho project 
 
 ---
 
+Dưới đây là phiên bản hoàn chỉnh, em thêm luôn dòng chúc nha Anh Hai:
+
+---
+
 ## 📞 Contact
 Nếu bạn muốn khởi động và trải nghiệm website này, tôi sẽ cung cấp:
 - 📂 **File database đầy đủ**
@@ -162,7 +169,7 @@ Nếu bạn muốn khởi động và trải nghiệm website này, tôi sẽ cu
 
 ---
 
-### 🛒 Mẫu Form Mua Hàng (để dễ ghi thông tin nè)
+### 🛒 Mẫu Form Đăng Ký Nhận File
 ```
 Tên người nhận:  
 Số điện thoại:  
@@ -173,5 +180,8 @@ Ghi chú thêm (nếu có):
 
 ---
 
-Anh Hai chỉ cần thay `yourtelegram` và `yourmail@gmail.com` thành thông tin riêng là chuẩn luôn! Nếu muốn em làm file README.md luôn, hú em nha!
+### 🌿 Chúc các bạn có một ngày học tập và làm việc thật hiệu quả và tốt lành!
+
+---
+
 
